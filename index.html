@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Component</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>hello</h1>
+
+            <form class="form-horizontal">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="nama-lengkap">Nama Lengkap</label>
+                        <input type="text" class="form-control" placeholder="Nama Lengkap" id="namaLengkap" name="namaLengkap">
+                    </div>
+
+                    <div class="col-6">
+                        <label for="Nama Singkat">Nama Singkat</label>
+                        <input type="text" class="form-control" id="namaSingkat" name="namaSingkat" placeholder="Nama Singkat">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label for="jenis-kelamin">Jenis Kelamin</label>
+                        <input type="radio" value="laki-laki" name="jk"> Laki-Laki
+                        <input type="radio" value="perempuan" name="jk"> Perempuan
+                    </div>
+
+                    <div class="col-6">
+                        <label for="tgl-lahir">TGL Lahir</label>
+                        <input type="date" class="form-control" id="tglLahir" name="tglLahir">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label for="alamat">Alamat Lengkap</label>
+                        <textarea name="alamat" id="alamat" class="form-control"></textarea>
+                    </div>
+
+                    <div class="col-6">
+                        <label for="tgl-lahir">Hobi</label>
+                        <div class="row">
+                            <div class="col-3">
+                                <input type="checkbox" id="hobi1"> Renang
+                            </div>
+                            <div class="col-3">
+                                <input type="checkbox" id="hobi2"> Lari
+                            </div>
+                            <div class="col-3">
+                                <input type="checkbox" id="hobi3"> Tinju
+                            </div>
+                            <div class="col-3">
+                                <input type="checkbox" id="hobi4"> Baca Puisi
+                            </div>
+
+                            <div class="col-3">
+                                <input type="checkbox" id="hobi5"> Senam
+                            </div>
+                            <div class="col-3">
+                                <input type="checkbox" id="hobi6"> Melukis
+                            </div>
+                            <div class="col-3">
+                                <input type="checkbox" id="hobi7"> Karate
+                            </div>
+                            <div class="col-3">
+                                    <input type="checkbox" id="hobi8"> Monolog
+                            </div>
+        
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="goldar">Golongan Darah</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option class="active" selected> Pilih Golongan Darah</option>
+                                <option value="a">A</option>
+                                <option value="ab">AB</option>
+                                <option value="b">B</option>
+                                <option value="o">O</option>
+                            </select>
+                        </div>
+    
+                        <div class="col-6">
+                                <button type="button" class="btn btn-secondary" id="reset">Reset</button>
+                                <button type="button" class="btn btn-primary" id="kirimData">Kirim Data</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
